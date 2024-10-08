@@ -1,0 +1,219 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Cameron Wolff} \\ \vspace{1pt}
+    \small 949-922-0667 $|$ \href{mailto:x@x.com}{\underline{cameron.wolff@proton.me}} $|$ 
+    \href{https://www.linkedin.com/in/camwolff02/}{\underline{linkedin.com/in/camwolff02}} $|$
+    \href{https://github.com/camwolff02}{\underline{github.com/camwolff02}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California Polytechnic State University (Cal Poly)}{San Luis Obispo, CA}
+      {Master of Science in Computer Science}{06/2026}
+    \resumeSubheading
+{California Polytechnic State University (Cal Poly)}{San Luis Obispo, CA}
+      {Bachelor of Science in Computer Science}{06/2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Associate Intern}{06/2024 -- 09/2024}
+      {BMSIS Young Scientist Program at NASA Ames Research Center}{}
+      \resumeItemListStart
+        \resumeItem{Designed data pipeline to take Plotly graph from an R script to Django to a HTML client, enabling users to dynamically update visualizations stored on the server.}
+        \resumeItem{Ported genetic data graphs from static PNG to interactable Plotly webpages, enabling Scientists to explore data.}
+        \resumeItem{Developed and deployed full stack web application to Ames’s servers, enabling integration with the NASA GeneLab Visualization Portal.}
+        \resumeItem{Presented live web app demo virtually to end users, NASA Ames Data Processing staff.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+      {Undergraduate Research Intern}{11/2022 -- 10/23}
+      {SDO Exploration and Research Community for Heliophysics}{}
+      \resumeItemListStart
+        \resumeItem{Developed an AI search engine that enables content-based image retrieval of solar images for astronomers.}
+        \resumeItem{Followed unit test driven development, used AGILE sprints and mob programming for fast paced collaborative development.}
+        \resumeItem{Trained a simple siamese neural network on the SDO/AIA satellite dataset, ensuring astronomers could see accurate search results.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Volunteer Research Assistant}{06/2023 -- 09/2023}
+      {Directed Acyclic Graphs Project through the NASA Open Science Data Repository  AWG}{}
+      \resumeItemListStart
+        \resumeItem{Researched using AI to generate DAGs for modeling astronaut medical risks, enabling biologists to understand human health in space.}
+        \resumeItem{Presented research on effectiveness of MMHC algorithm at American Gravitational and Space Research Conference.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Software Lead} $|$ Cal Poly Space Systems | \emph{C++,  Linux, Git,  ROS2, micro-ROS, esp32}}{03/2024 -- Present}
+          \resumeItemListStart
+           \resumeItem{Designed and presented flight software architecture for Altitude Determination and Control System to SpaceX engineers for external feedback.}
+            \resumeItem{Designed and implemented distributed flight and ground software, moving rocket data to graphical visualizer.}
+            \resumeItem{Lead team during summer through development of new flight computer and flight software OS, enabling re-usability for future rockets.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Personal Mobile Robot} $|$ \emph{C++, Python,  Linux, Git, ROS2, micro-ROS, Rviz, Servos}}{07/2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built Raspberry Pi robot, controlled wirelessly by a Linux base station with camera feed for remote operation.}
+            \resumeItem{Calculated and implemented differential drive kinematics for velocity control and odometry, enabling 3D visualization of movement.}
+            \resumeItem{Iterated after real world testing, moving to ackermann kinematics (car controls) for greater stability at speed.}
+          \resumeItemListEnd
+
+       \resumeProjectHeading
+            {\textbf{Rover Software Developer} $|$ SC Robotics | \emph{Python, C++,  Linux, Git,  ROS2, OpenCV, PID}}{09/2022 -- 02/2024}
+          \resumeItemListStart
+            \resumeItem{Developed camera calibration, distance estimation, and rover controller for autonomous driving to ArUco markers.}
+            \resumeItem{Designed robust and scalable backend for arm and end-effector,  creating link between physical and simulated twin.}
+            \resumeItem{Obtained operational insight, piloting the rover through the URC 2023 finals as the only community college team.}
+             \resumeItem{Mentored new students through workshops on ROS2 and Python, ensuring the success of future teams.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, Java, R, JavaScript, ARM Assembly, HTML/CSS, XML, JSON, URDF } \\
+     \textbf{Frameworks}{: Django, unittest, ROS2, micro-ROS, JavaFX, JUnit, JQuery } \\
+     \textbf{Developer Tools}{: Git, Linux server, VIM, VS Code, PyCharm, IntelliJ, Jupyter, Docker, Python venv, conda, Gazebo} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, Plotly, OpenCV, Streamlit, Scikit-learn, Pytorch Lightning}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
